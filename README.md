@@ -141,9 +141,9 @@
 &nbsp;
 ### Model
 
-<embed src="docs/AET.jpg" width="1000" height="175">
+<embed src="docs/AET.jpg" width="1000" >
 
-<embed src="docs/front-end.jpg" width="300" height="175">
+<embed src="docs/front-end.jpg" width="300" >
 
 <embed src="docs/latent-space.jpg" width="500" height="375">
 
