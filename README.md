@@ -152,8 +152,8 @@ Detailed architecture of adaptive front-end:
 <center>
 <embed src="docs/front-end.jpg" width="300" >
 </center>
+Input frame size of 4096 samples and &plusmn;4 context frames.
 &nbsp;
-&nbsp; &nbsp;
 &nbsp;
 Detailed architecture of the latent-space:
 <center>
