@@ -141,22 +141,25 @@
 &nbsp;
 ### model
 
-Block diagram of the proposed model; adaptive front-end, latent-space and synthesis back-end.
+Block diagram of the proposed model; adaptive front-end, latent-space and synthesis back-end:
 <center>
 <embed src="docs/AET.jpg" width="1000" >
 </center>
 
-Detailed architecture of adaptive front-end.
+&nbsp;
+Detailed architecture of adaptive front-end:
 <center>
 <embed src="docs/front-end.jpg" width="300" >
 </center>
 
-Detailed architecture of adaptive latent-space.
+&nbsp;
+Detailed architecture of the latent-space:
 <center>
 <embed src="docs/latent-space.jpg" width="500" >
 </center>
 
-Detailed architecture of synthesis back-end
+&nbsp;
+Detailed architecture of synthesis back-end:
 <center>
 <embed src="docs/back-end.jpg" width="500">
 </center>
