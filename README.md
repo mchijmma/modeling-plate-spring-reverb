@@ -7,7 +7,7 @@
 <div id="column1" style="float:left; margin:0; width:22%;">
 - input <br />
 <audio controls="controls">
-    <source src="audio/plate/Plate_30_AET_CRNN_23_input.mp3" type="audio/mp3" width:20%/>
+    <source src="audio/plate/Plate_30_AET_CRNN_23_input.mp3" type="audio/mp3" />
 </audio>
 <audio controls="controls">
     <source src="audio/plate/Plate_18_AET_CRNN_23_input.mp3" type="audio/mp3" />
@@ -75,7 +75,7 @@
 <div id="column1" style="float:left; margin:0; width:22%;">
 - input <br />
 <audio controls="controls">
-    <source src="audio/spring/Spring_56_AET_CRNN_23_input.mp3" type="audio/mp3" width:20%/>
+    <source src="audio/spring/Spring_56_AET_CRNN_23_input.mp3" type="audio/mp3" />
 </audio>
 <audio controls="controls">
     <source src="audio/spring/Spring_34_AET_CRNN_23_input.mp3" type="audio/mp3" />
