@@ -156,7 +156,7 @@ Input frame size of 4096 samples and &plusmn;4 context frames.
 
 <br>Detailed architecture of the latent-space:
 <center>
-<embed src="docs/latent-space.jpg" width="500" >
+<embed src="docs/latent-space-2.jpg" width="500" >
 </center>
 
 &nbsp;
