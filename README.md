@@ -153,9 +153,8 @@ Detailed architecture of adaptive front-end:
 <embed src="docs/front-end.jpg" width="300" >
 </center>
 Input frame size of 4096 samples and &plusmn;4 context frames.
-&nbsp;
-&nbsp;
-Detailed architecture of the latent-space:
+
+<br>Detailed architecture of the latent-space:
 <center>
 <embed src="docs/latent-space.jpg" width="500" >
 </center>
@@ -165,3 +164,4 @@ Detailed architecture of synthesis back-end:
 <center>
 <embed src="docs/back-end.jpg" width="500">
 </center>
+Output frame size of 4096 samples.
