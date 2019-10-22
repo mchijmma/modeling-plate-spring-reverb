@@ -4,7 +4,7 @@
 
 ### plate
 <div id="contentBox" style="margin:0px auto; width:250%">
-<div id="column1" style="float:left; margin:0; width:23%;">
+<div id="column1" style="float:left; margin:0; width:22%;">
 - input <br />
 <audio controls="controls">
     <source src="audio/plate/Plate_30_AET_CRNN_23_input.mp3" type="audio/mp3" width:20%/>
@@ -20,7 +20,7 @@
 </audio>
 </div>
 
-<div id="column2" style="float:left; margin:0;width:23%;">
+<div id="column2" style="float:left; margin:0;width:22%;">
 - target <br />
 <audio controls="controls">
     <source src="audio/plate/Plate_30_AET_CRNN_23_target.mp3" type="audio/mp3" />
@@ -36,7 +36,7 @@
 </audio>
 </div>
 
-<div id="column3" style="float:left; margin:0;width:23%">
+<div id="column3" style="float:left; margin:0;width:22%">
 - model-1 <br />
 <audio controls="controls">
     <source src="audio/plate/Plate_30_AET_Convolution_21_output.mp3" type="audio/mp3" />
@@ -71,43 +71,68 @@
 
 &nbsp;
 ### spring
-<div id="contentBox" style="margin:0px auto; width:150%">
-<div id="column1" style="float:left; margin:0; width:36.5%;">
+<div id="contentBox" style="margin:0px auto; width:250%">
+<div id="column1" style="float:left; margin:0; width:22%;">
 - input <br />
 <audio controls="controls">
-    <source src="audio/Flanger/1-Flanger_input.mp3" type="audio/mp3" />
+    <source src="audio/spring/Spring_56_AET_CRNN_23_input.mp3" type="audio/mp3" width:20%/>
 </audio>
 <audio controls="controls">
-    <source src="audio/Flanger/2-Flanger_input.mp3" type="audio/mp3" />
+    <source src="audio/spring/Spring_34_AET_CRNN_23_input.mp3" type="audio/mp3" />
 </audio>
 <audio controls="controls">
-    <source src="audio/Flanger/3-Flanger_input.mp3" type="audio/mp3" />
+    <source src="audio/spring/Spring_16_AET_CRNN_23_input.mp3" type="audio/mp3" />
+</audio>
+<audio controls="controls">
+    <source src="audio/spring/Spring_12_AET_CRNN_23_input.mp3" type="audio/mp3" />
 </audio>
 </div>
 
-<div id="column2" style="float:left; margin:0;width:36.5%;">
+<div id="column2" style="float:left; margin:0;width:22%;">
 - target <br />
 <audio controls="controls">
-    <source src="audio/Flanger/1-Flanger_target.mp3" type="audio/mp3" />
+    <source src="audio/spring/Spring_56_AET_CRNN_23_target.mp3" type="audio/mp3" />
 </audio>
 <audio controls="controls">
-    <source src="audio/Flanger/2-Flanger_target.mp3" type="audio/mp3" />
+    <source src="audio/spring/Spring_34_AET_CRNN_23_target.mp3" type="audio/mp3" />
 </audio>
 <audio controls="controls">
-    <source src="audio/Flanger/3-Flanger_target.mp3" type="audio/mp3" />
+    <source src="audio/spring/Spring_16_AET_CRNN_23_target.mp3" type="audio/mp3" />
+</audio>
+<audio controls="controls">
+    <source src="audio/spring/Spring_12_AET_CRNN_23_target.mp3" type="audio/mp3" />
 </audio>
 </div>
 
-<div id="column3" style="float:left; margin:0;width:27%">
-- output <br />
+<div id="column3" style="float:left; margin:0;width:22%">
+- model-1 <br />
 <audio controls="controls">
-    <source src="audio/Flanger/1-Flanger_output.mp3" type="audio/mp3" />
+    <source src="audio/spring/Spring_56_AET_Convolution_21_output.mp3" type="audio/mp3" />
 </audio>
 <audio controls="controls">
-    <source src="audio/Flanger/2-Flanger_output.mp3" type="audio/mp3" />
+    <source src="audio/spring/Spring_34_AET_Convolution_21_output.mp3" type="audio/mp3" />
 </audio>
 <audio controls="controls">
-    <source src="audio/Flanger/3-Flanger_output.mp3" type="audio/mp3" />
+    <source src="audio/spring/Spring_16_AET_Convolution_21_output.mp3" type="audio/mp3" />
+</audio>
+<audio controls="controls">
+    <source src="audio/spring/Spring_12_AET_Convolution_21_output.mp3" type="audio/mp3" />
+</audio>
+</div>
+
+<div id="column4" style="float:left; margin:0;width:10%">
+- model-2 <br />
+<audio controls="controls">
+    <source src="audio/spring/Spring_56_AET_CRNN_23_output.mp3" type="audio/mp3" />
+</audio>
+<audio controls="controls">
+    <source src="audio/spring/Spring_34_AET_CRNN_23_output.mp3" type="audio/mp3" />
+</audio>
+<audio controls="controls">
+    <source src="audio/spring/Spring_16_AET_CRNN_23_output.mp3" type="audio/mp3" />
+</audio>
+<audio controls="controls">
+    <source src="audio/spring/Spring_12_AET_CRNN_23_output.mp3" type="audio/mp3" />
 </audio>
 </div>
 </div>
