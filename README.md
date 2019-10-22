@@ -139,7 +139,7 @@
 
 
 &nbsp;
-### model
+### Model
 
 Block diagram of the proposed model; adaptive front-end, latent-space and synthesis back-end:.
 Input frame size of 4096 samples and &plusmn;4 context frames.
