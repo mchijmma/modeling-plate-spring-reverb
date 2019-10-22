@@ -141,14 +141,13 @@
 &nbsp;
 ### Model
 
-Block diagram of the proposed model; adaptive front-end, latent-space and synthesis back-end:
+<br>Block diagram of the proposed model; adaptive front-end, latent-space and synthesis back-end:
 
 <center>
 <embed src="docs/AET.jpg" width="1000" >
 </center>
 
-&nbsp;
-Detailed architecture of adaptive front-end:
+<br>Detailed architecture of adaptive front-end:
 <center>
 <embed src="docs/front-end.jpg" width="300" >
 </center>
@@ -159,8 +158,7 @@ Input frame size of 4096 samples and &plusmn;4 context frames.
 <embed src="docs/latent-space-2.jpg" width="500" >
 </center>
 
-&nbsp;
-Detailed architecture of synthesis back-end:
+<br>Detailed architecture of synthesis back-end:
 <center>
 <embed src="docs/back-end.jpg" width="500">
 </center>
