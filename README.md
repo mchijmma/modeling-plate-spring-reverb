@@ -145,6 +145,6 @@
 
 <embed src="docs/front-end.jpg" width="300" >
 
-<embed src="docs/latent-space.jpg" width="500" height="375">
+<embed src="docs/latent-space.jpg" width="500" >
 
-<embed src="docs/back-end.jpg" width="500" height="375">
+<embed src="docs/back-end.jpg" width="500">
