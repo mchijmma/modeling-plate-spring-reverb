@@ -52,7 +52,7 @@
 </audio>
 </div>
 
-<div id="column4" style="float:right; margin:0;width:17%">
+<div id="column4" style="float:left; margin:0;width:17%">
 - model-2 <br />
 <audio controls="controls">
     <source src="audio/plate/Plate_30_AET_CRNN_23_output.mp3" type="audio/mp3" />
