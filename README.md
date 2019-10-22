@@ -3,11 +3,11 @@
 [Martínez Ramírez M. A.](http://m-marco.com), [Benetos, E.](https://www.eecs.qmul.ac.uk/~emmanouilb/) and [Reiss J. D.](http://www.eecs.qmul.ac.uk/~josh/), “Modeling plate and spring reverberation using a DSP-informed deep nerual network” submitted to the IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), Barcelona, Spain, May 2020.
 
 ### plate
-<div id="contentBox" style="margin:0px auto; width:200%">
+<div id="contentBox" style="margin:0px auto; width:250%">
 <div id="column1" style="float:left; margin:0; width:26.5%;">
 - input <br />
 <audio controls="controls">
-    <source src="audio/plate/Plate_30_AET_CRNN_23_input.mp3" type="audio/mp3" width="20%"/>
+    <source src="audio/plate/Plate_30_AET_CRNN_23_input.mp3" type="audio/mp3" width:20%/>
 </audio>
 <audio controls="controls">
     <source src="audio/plate/Plate_18_AET_CRNN_23_input.mp3" type="audio/mp3" />
