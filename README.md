@@ -141,8 +141,8 @@
 &nbsp;
 ### Model
 
-<embed src="docs/front-end.pdf" width="500" height="375">
+<embed src="docs/front-end.jpg" width="500" height="375">
 
-<embed src="docs/latent-end.pdf" width="500" height="375">
+<embed src="docs/latent-end.jpg" width="500" height="375">
 
-<embed src="docs/back-end.pdf" width="500" height="375">
+<embed src="docs/back-end.jpg" width="500" height="375">
