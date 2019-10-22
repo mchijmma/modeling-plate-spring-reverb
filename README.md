@@ -1,6 +1,6 @@
 [Audio examples](https://mchijmma.github.io/modeling-plate-spring/) for the [paper](http:link.to.paper):
 
-[Martínez Ramírez M. A.](http://m-marco.com), [Benetos, E.](https://www.eecs.qmul.ac.uk/~emmanouilb/) and [Reiss J. D.](http://www.eecs.qmul.ac.uk/~josh/), “Modeling plate and spring reverberation using a DSP-informed deep nerual network” submitted to the IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), Barcelona, Spain, May 2020.
+[Martínez Ramírez M. A.](http://m-marco.com), [Benetos, E.](https://www.eecs.qmul.ac.uk/~emmanouilb/) and [Reiss J. D.](http://www.eecs.qmul.ac.uk/~josh/), “Modeling plate and spring reverberation using a DSP-informed deep neural network” submitted to the IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), Barcelona, Spain, May 2020.
 
 ### plate
 <div id="contentBox" style="margin:0px auto; width:250%">
@@ -140,7 +140,7 @@
 
 &nbsp;
 ### Model
-
+<center>
 <embed src="docs/AET.jpg" width="1000" >
 
 <embed src="docs/front-end.jpg" width="300" >
@@ -148,3 +148,4 @@
 <embed src="docs/latent-space.jpg" width="500" >
 
 <embed src="docs/back-end.jpg" width="500">
+</center>
