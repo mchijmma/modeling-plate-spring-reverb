@@ -4,7 +4,7 @@
 
 ### plate
 <div id="contentBox" style="margin:0px auto; width:200%">
-<div id="column1" style="float:left; margin:0; width:36.5%;">
+<div id="column1" style="float:left; margin:0; width:26.5%;">
 - input <br />
 <audio controls="controls">
     <source src="audio/plate/Plate_30_AET_CRNN_23_input.mp3" type="audio/mp3" />
@@ -20,7 +20,7 @@
 </audio>
 </div>
 
-<div id="column2" style="float:left; margin:0;width:36.5%;">
+<div id="column2" style="float:left; margin:0;width:26.5%;">
 - target <br />
 <audio controls="controls">
     <source src="audio/plate/Plate_30_AET_CRNN_23_target.mp3" type="audio/mp3" />
