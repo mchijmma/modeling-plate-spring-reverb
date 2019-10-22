@@ -1,37 +1,91 @@
-## Welcome to GitHub Pages
+[Audio examples](https://mchijmma.github.io/modeling-plate-spring/) for the [paper](http:link.to.paper):
 
-You can use the [editor on GitHub](https://github.com/mchijmma/modeling-plate-spring-reverb/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+[Martínez Ramírez M. A.](http://m-marco.com), [Benetos, E.](https://www.eecs.qmul.ac.uk/~emmanouilb/) and [Reiss J. D.](http://www.eecs.qmul.ac.uk/~josh/), “Modeling plate and spring reverberation using a DSP-informed deep nerual network” submitted to the IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), Barcelona, Spain, May 2020.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### plate
+<div id="contentBox" style="margin:0px auto; width:150%">
+<div id="column1" style="float:left; margin:0; width:36.5%;">
+- input <br />
+<audio controls="controls">
+    <source src="audio/Chorus/1-Chorus_input.mp3" type="audio/mp3" />
+</audio>
+<audio controls="controls">
+    <source src="audio/Chorus/2-Chorus_input.mp3" type="audio/mp3" />
+</audio>
+<audio controls="controls">
+    <source src="audio/Chorus/3-Chorus_input.mp3" type="audio/mp3" />
+</audio>
+</div>
 
-### Markdown
+<div id="column2" style="float:left; margin:0;width:36.5%;">
+- target <br />
+<audio controls="controls">
+    <source src="audio/Chorus/1-Chorus_target.mp3" type="audio/mp3" />
+</audio>
+<audio controls="controls">
+    <source src="audio/Chorus/2-Chorus_target.mp3" type="audio/mp3" />
+</audio>
+<audio controls="controls">
+    <source src="audio/Chorus/3-Chorus_target.mp3" type="audio/mp3" />
+</audio>
+</div>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+<div id="column3" style="float:left; margin:0;width:27%">
+- output <br />
+<audio controls="controls">
+    <source src="audio/Chorus/1-Chorus_output.mp3" type="audio/mp3" />
+</audio>
+<audio controls="controls">
+    <source src="audio/Chorus/2-Chorus_output.mp3" type="audio/mp3" />
+</audio>
+<audio controls="controls">
+    <source src="audio/Chorus/3-Chorus_output.mp3" type="audio/mp3" />
+</audio>
+</div>
+</div>
 
-```markdown
-Syntax highlighted code block
+&nbsp;
+### spring
+<div id="contentBox" style="margin:0px auto; width:150%">
+<div id="column1" style="float:left; margin:0; width:36.5%;">
+- input <br />
+<audio controls="controls">
+    <source src="audio/Flanger/1-Flanger_input.mp3" type="audio/mp3" />
+</audio>
+<audio controls="controls">
+    <source src="audio/Flanger/2-Flanger_input.mp3" type="audio/mp3" />
+</audio>
+<audio controls="controls">
+    <source src="audio/Flanger/3-Flanger_input.mp3" type="audio/mp3" />
+</audio>
+</div>
 
-# Header 1
-## Header 2
-### Header 3
+<div id="column2" style="float:left; margin:0;width:36.5%;">
+- target <br />
+<audio controls="controls">
+    <source src="audio/Flanger/1-Flanger_target.mp3" type="audio/mp3" />
+</audio>
+<audio controls="controls">
+    <source src="audio/Flanger/2-Flanger_target.mp3" type="audio/mp3" />
+</audio>
+<audio controls="controls">
+    <source src="audio/Flanger/3-Flanger_target.mp3" type="audio/mp3" />
+</audio>
+</div>
 
-- Bulleted
-- List
+<div id="column3" style="float:left; margin:0;width:27%">
+- output <br />
+<audio controls="controls">
+    <source src="audio/Flanger/1-Flanger_output.mp3" type="audio/mp3" />
+</audio>
+<audio controls="controls">
+    <source src="audio/Flanger/2-Flanger_output.mp3" type="audio/mp3" />
+</audio>
+<audio controls="controls">
+    <source src="audio/Flanger/3-Flanger_output.mp3" type="audio/mp3" />
+</audio>
+</div>
+</div>
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/mchijmma/modeling-plate-spring-reverb/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
