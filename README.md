@@ -1,4 +1,4 @@
-[Audio examples](https://mchijmma.github.io/modeling-plate-spring-reverb/) for the [paper](http:link.to.paper):
+[Audio examples](https://mchijmma.github.io/modeling-plate-spring-reverb/) for the [paper](https://arxiv.org/abs/1910.10105):
 
 [Martínez Ramírez M. A.](http://m-marco.com), [Benetos, E.](https://www.eecs.qmul.ac.uk/~emmanouilb/) and [Reiss J. D.](http://www.eecs.qmul.ac.uk/~josh/), “Modeling plate and spring reverberation using a DSP-informed deep neural network” submitted to the IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), Barcelona, Spain, May 2020.
 
@@ -167,7 +167,7 @@ Output frame size of 4096 samples.
 
 &nbsp;
 ### Citation
->@inproceedings{martinez2019modeling,<br />
+>@inproceedings{martinez2020modeling,<br />
 >   title={Modeling plate and spring reverberation using a DSP-informed deep neural network},<br />
 >   author={Mart\'{i}nez Ram\'{i}rez, Marco A and Reiss, Joshua D},<br />
 >   booktitle={submitted to the IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)},<br />
