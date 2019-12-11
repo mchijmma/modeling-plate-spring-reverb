@@ -2,6 +2,8 @@
 
 [Martínez Ramírez M. A.](http://m-marco.com), [Benetos, E.](https://www.eecs.qmul.ac.uk/~emmanouilb/) and [Reiss J. D.](http://www.eecs.qmul.ac.uk/~josh/), “Modeling plate and spring reverberation using a DSP-informed deep neural network” submitted to the IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), Barcelona, Spain, May 2020.
 
+[View the source code.](https://github.com/mchijmma/modeling-plate-spring-reverb/tree/master/src)
+
 ### plate
 <div id="contentBox" style="margin:0px auto; width:250%">
 <div id="column1" style="float:left; margin:0; width:22%;">
