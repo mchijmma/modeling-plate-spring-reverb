@@ -8,9 +8,8 @@ scipy==1.2.0
 sacred==0.7.7
 tensorflow-gpu==1.11.0
 keras==2.2.4
+kapre==0.1.3.1
 librosa==0.6.0
-sklearn==0.20.2
-brian==1.4.4
 json==2.0.9
 ```
 
@@ -18,10 +17,7 @@ json==2.0.9
 
 `python main.py with model_type='pretraining'` 
 
-`python main.py with model_type='CAFx'` 
+`python main.py with model_type='model_1'` 
 
-`python main.py with model_type='WaveNet'` 
+`python main.py with model_type='model_2'` 
 
-`python main.py with model_type='CRAFx'` 
-
-`python main.py with model_type='CWAFx'` 
