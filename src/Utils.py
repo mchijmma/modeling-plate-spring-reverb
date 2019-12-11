@@ -5,14 +5,9 @@ import pickle
 import random
 import librosa
 import scipy
-
-
 random.seed(4264523625)
-
-import scipy
 from scipy.signal import lfilter
-from sklearn.metrics import mean_absolute_error, mean_squared_error
-from sklearn.metrics.pairwise import paired_distances
+
 
 
 def dumpPickle(d, name, path):
