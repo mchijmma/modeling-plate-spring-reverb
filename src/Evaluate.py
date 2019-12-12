@@ -20,15 +20,15 @@ def evaluate(cfg, model_type, nameModel):
    
     model_config = cfg[model_type]
 
-    print('Evaluating ', model_config['modelName'])
+    print('Evaluating ', model_config['modelName'], 'type: ', model_type)
 
     # Xtest, Ytestshould be tensors of shape (number_of_recordings, number_of_samples, 1) 
-    Xtest = np.random.rand(1, 32000, 1)
-    Ytest = np.random.rand(1, 32000, 1)
+    Xtest = np.random.rand(1, 2*kSR, 1)
+    Ytest = np.random.rand(1, 2*kSR, 1)
     
     # zero pad at the end as well. 
-    Xtest = Utils.cropAndPad(Xtest, crop = 0, pad = 4*model_config['winLength']//2)
-    Ytest = Utils.cropAndPad(Ytest, crop = 0, pad = 4*model_config['winLength']//2)
+    Xtest = Utils.cropAndPad(Xtest, crop = 0, pad = kContext*model_config['winLength']//2)
+    Ytest = Utils.cropAndPad(Ytest, crop = 0, pad = kContext*model_config['winLength']//2)
     
     YDtest, _ = preProcessingData(Ytest,  model_config['winLength'], model_config['winLength']//2,
                       window = True, preEmphasis = False,

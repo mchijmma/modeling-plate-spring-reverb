@@ -22,17 +22,14 @@ import scipy
 
 
 # constants
+from __main__ import kSR, kN_dft, kContext
 
-kSR = 16000
-kContext = 4
-kBatch = 20
-kWin = 4096
 # custom general functions:
 def Window(x):
     
-    window = scipy.signal.hann(kWin, sym=False)
+    window = scipy.signal.hann(kN_dft, sym=False)
     window = K.cast(window, dtype='float32')
-    window = K.reshape(window, (-1, kWin, 1))
+    window = K.reshape(window, (-1, kN_dft, 1))
     output = K.tf.multiply(x, window)
     
     return output
@@ -192,12 +189,12 @@ def model_1(win_length, filters, kernel_size_1, learning_rate, batch):
                                  return_sequences=True, dropout=0.1,
                                  recurrent_dropout=0.1), merge_mode='concat', name='birnn_3')
     
-    convTensors = Conv1D_localTensor(filters, win_length, kBatch, strides=1, padding='same',
+    convTensors = Conv1D_localTensor(filters, win_length, batch, strides=1, padding='same',
                                      name='convTensors')
     
     deconv = Conv1D_tied(1, kernel_size_1, conv, padding='same', name='deconv')
     
-    velvet = VelvetNoise(kPs, kBatch, input_dim=filters, input_length=win_length, name='velvet')
+    velvet = VelvetNoise(kPs, batch, input_dim=filters, input_length=win_length, name='velvet')
         
     X = TimeDistributed(conv, name='conv')(x)
     X_abs = TimeDistributed(activation_abs, name='conv_activation')(X)

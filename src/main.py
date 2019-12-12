@@ -6,33 +6,32 @@ import os
 
 from sacred import Experiment
 from Config import config_ingredient
+
+import numpy as np
+import math
+
+ex = Experiment('model training', ingredients=[config_ingredient])
+
+# constants:
+
+kSR = 16000
+kN_dft = 4096 #FFT size and hope size should be equal to winLength
+kN_hop = 4096
+kContext = 4
+
+import Evaluate
 import Models
 from Layers import Generator, GeneratorContextSpec, preProcessingData
 import Utils
 
-ex = Experiment('model training', ingredients=[config_ingredient])
-
-import numpy as np
-import math
- 
-
-kSR = 16000
-# constants for spectograms:
-kN_dft = 4096
-kN_hop = 4096
-# constants context frames:
-kContext = 4
-
-import Evaluate
-
-# model_type should be 'pretraining', 'model_1' or 'model_2'
-
+    
+# model_type should be 'model_1' or 'model_2'
 
 @ex.automain
 def main(cfg, model_type):
    
     model_config = cfg[model_type]
-    
+        
     if os.path.isdir(model_config['modelsPath']) == False:
         os.mkdir(model_config['modelsPath'])
 
@@ -45,13 +44,11 @@ def main(cfg, model_type):
     
     try:
 
-        print('Training ', model_config['modelName'])
-
         # Xtrain, Ytrain, Xval, Yval should be tensors of shape (number_of_recordings, number_of_samples, 1) 
-        Xtrain = np.random.rand(1, 32000, 1)
-        Ytrain = np.random.rand(1, 32000, 1)
-        Xval = np.random.rand(1, 32000, 1)
-        Yval = np.random.rand(1, 32000, 1)
+        Xtrain = np.random.rand(1, 2*kSR, 1)
+        Ytrain = np.random.rand(1, 2*kSR, 1)
+        Xval = np.random.rand(1, 2*kSR, 1)
+        Yval = np.random.rand(1, 2*kSR, 1)
         
         # since the samples are 2 secs long, we zero pad 4*hop_size samples at the end of the recording. This for the 4 
         # subsequent frames in the Leslie modeling tasks.
@@ -82,19 +79,7 @@ def main(cfg, model_type):
                           spec = False)
 
 
-        if model_type in 'pretraining':
-
-            model = Models.pretrainingModel(model_config['winLength'],
-                                model_config['filters'], 
-                                model_config['kernelSize'], 
-                                model_config['learningRate'])
-
-            Xtrain = np.vstack((Xtrain, Ytrain))
-            Xval = np.vstack((Xval, Yval))
-            trainGen = Generator(Xtrain, Xtrain, model_config['winLength'], model_config['winLength']//2)
-            valGen = Generator(Xval, Xval, model_config['winLength'], model_config['winLength']//2)
-
-        elif model_type in 'model_1':
+        if model_type in 'model_1':
 
             model = Models.model_1(model_config['winLength'],
                                 model_config['filters'], 
@@ -126,10 +111,47 @@ def main(cfg, model_type):
 
         
 
-        model.summary()
+        print ('pretraining ', model_config['modelName'], 'type: ', model_type)
+            
+        earlyStopping_pre = Models.EarlyStopping(monitor='loss',
+                                      min_delta=0,
+                                      patience=25,
+                                      verbose=1,
+                                      mode='auto',
+                                      baseline=None, restore_best_weights=False)
 
-        # load pretrained model if available:
-    #         model.load_weights(path_preatrained_model, by_name=True) 
+        checkpointer_pre = Models.ModelCheckpoint(filepath=model_config['modelsPath']+model_config['modelName']+'_chk.h5',
+                                           monitor=model_config['monitorLoss'],
+                                           verbose=1,
+                                           save_best_only=True,
+                                           save_weights_only=True)  
+
+        model_pretraining = Models.pretrainingModel(model_config['winLength'],
+                                model_config['filters'], 
+                                model_config['kernelSize'], 
+                                model_config['learningRate'])
+
+
+        Xtrain_pre = np.vstack((Xtrain, Ytrain))
+        Xval_pre = np.vstack((Xval, Yval))
+        trainGen_pre = Generator(Xtrain_pre, Xtrain_pre, model_config['winLength'], model_config['winLength']//2)
+        valGen_pre = Generator(Xval_pre, Xval_pre, model_config['winLength'], model_config['winLength']//2)   
+
+        model_pretraining.fit_generator(trainGen_pre,
+                       steps_per_epoch=None,
+                       epochs=model_config['epoch'],
+                       verbose=2,
+                       callbacks = [checkpointer_pre, earlyStopping_pre],
+                       validation_data = valGen_pre,
+                       validation_steps=len(Xval),
+                       shuffle=True)
+
+        model.load_weights(model_config['modelsPath']+model_config['modelName']+'_chk.h5', by_name=True) 
+        print ('Pretraining finished.')
+                
+        print('Training ', model_config['modelName'], 'type: ', model_type)
+        
+        model.summary()
 
 
 
@@ -176,8 +198,7 @@ def main(cfg, model_type):
 
         print('Training finished.')
         
-        if model_type in ['model_1','model_2']:
-            Evaluate.evaluate(cfg, model_type, model_config['modelName'])
+        Evaluate.evaluate(cfg, model_type, model_config['modelName'])
 
     except Exception as e: 
         print(e)
