@@ -1,6 +1,6 @@
 [Audio examples](https://mchijmma.github.io/modeling-plate-spring-reverb/) for the [paper](https://arxiv.org/abs/1910.10105):
 
-[Martínez Ramírez M. A.](http://m-marco.com), [Benetos, E.](https://www.eecs.qmul.ac.uk/~emmanouilb/) and [Reiss J. D.](http://www.eecs.qmul.ac.uk/~josh/), “Modeling plate and spring reverberation using a DSP-informed deep neural network” submitted to the IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), Barcelona, Spain, May 2020.
+[Martínez Ramírez M. A.](http://m-marco.com), [Benetos, E.](https://www.eecs.qmul.ac.uk/~emmanouilb/) and [Reiss J. D.](http://www.eecs.qmul.ac.uk/~josh/), “Modeling plate and spring reverberation using a DSP-informed deep neural network” in the IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), Barcelona, Spain, May 2020.
 
 [View the source code.](https://github.com/mchijmma/modeling-plate-spring-reverb/tree/master/src)
 
@@ -172,5 +172,8 @@ Output frame size of 4096 samples.
 >@inproceedings{martinez2020modeling,<br />
 >   title={Modeling plate and spring reverberation using a DSP-informed deep neural network},<br />
 >   author={Mart\'{i}nez Ram\'{i}rez, Marco A and Benetos, Emmanouil and Reiss, Joshua D},<br />
->   booktitle={arXiv preprint arXiv:1910.10105}<br />
+>   booktitle={IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)},<br />
+>   month = {May},<br />
+>   year = {2020},<br />
+>   location = {Barcelona, Spain}<br />
 >}<br />
