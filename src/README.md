@@ -1,4 +1,4 @@
-## Deep learning for black-box modeling of audio effects - source code
+## Modeling plate and spring reverberation using a DSP-informed deep neural network - source code
 
 Python packages:
 
