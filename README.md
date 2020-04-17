@@ -159,7 +159,7 @@ Input frame size of 4096 samples and &plusmn;4 context frames.
 
 <br>Block diagram of the latent-space:
 <center>
-<embed src="docs/SFIR.png" width="600" >
+<embed src="docs/SFIR.png" width="500" >
 </center>
 
 <br>Detailed architecture of the latent-space:
