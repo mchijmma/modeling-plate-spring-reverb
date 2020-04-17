@@ -1,4 +1,4 @@
-[Audio examples](https://mchijmma.github.io/modeling-plate-spring-reverb/) for the [paper](https://arxiv.org/abs/1910.10105):
+[Audio examples](https://mchijmma.github.io/modeling-plate-spring-reverb/) for the [paper](https://ieeexplore.ieee.org/document/9053093):
 
 [Martínez Ramírez M. A.](http://m-marco.com), [Benetos, E.](https://www.eecs.qmul.ac.uk/~emmanouilb/) and [Reiss J. D.](http://www.eecs.qmul.ac.uk/~josh/), “Modeling plate and spring reverberation using a DSP-informed deep neural network” in the IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), Barcelona, Spain, May 2020.
 
@@ -158,9 +158,8 @@
 Input frame size of 4096 samples and &plusmn;4 context frames.
 
 <br>Block diagram of the latent-space:
-
 <center>
-<embed src="docs/SFIR.png" width="1000" >
+<embed src="docs/SFIR.png" width="700" >
 </center>
 
 <br>Detailed architecture of the latent-space:
@@ -168,11 +167,22 @@ Input frame size of 4096 samples and &plusmn;4 context frames.
 <embed src="docs/SFIR-table.png" width="500" >
 </center>
 
-<br>Detailed architecture of synthesis back-end:
+<br>Block diagram of the synthesis back-end:
 <center>
-<embed src="docs/back-end.jpg" width="500">
+<embed src="docs/DNN-SAAF-SE-LSTM.png" width="1000" >
 </center>
+
+<br>Detailed architecture of the synthesis back-end:
+<center>
+<embed src="docs/DNN-SAAF-SE-LSTM-table.png" width="500" >
+</center>
+
 Output frame size of 4096 samples.
+
+<br>Plate and Spring settings:
+<center>
+<embed src="docs/fx-settings.png" width="500" >
+</center>
 
 
 &nbsp;
