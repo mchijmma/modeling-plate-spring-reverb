@@ -159,7 +159,7 @@ Input frame size of 4096 samples and &plusmn;4 context frames.
 
 <br>Block diagram of the latent-space:
 <center>
-<embed src="docs/SFIR.png" width="700" >
+<embed src="docs/SFIR.png" width="600" >
 </center>
 
 <br>Detailed architecture of the latent-space:
@@ -169,19 +169,19 @@ Input frame size of 4096 samples and &plusmn;4 context frames.
 
 <br>Block diagram of the synthesis back-end:
 <center>
-<embed src="docs/DNN-SAAF-SE-LSTM.png" width="1000" >
+<embed src="docs/DNN-SAAF-SE-LSTM.png" width="700" >
 </center>
 
 <br>Detailed architecture of the synthesis back-end:
 <center>
-<embed src="docs/DNN-SAAF-SE-LSTM-table.png" width="500" >
+<embed src="docs/DNN-SAAF-SE-LSTM-table.png" width="400" >
 </center>
 
 Output frame size of 4096 samples.
 
 <br>Plate and Spring settings:
 <center>
-<embed src="docs/fx-settings.png" width="500" >
+<embed src="docs/fx-settings.png" width="600" >
 </center>
 
 
