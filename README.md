@@ -188,7 +188,7 @@ Output frame size of 4096 samples.
 &nbsp;
 ### Citation
 >@inproceedings{martinez2020modeling,<br />
->   title={Modeling plate and spring reverberation using a DSP-informed deep neural network},<br />
+>   title={Modeling plate and spring reverberation using a {DSP}-informed deep neural network},<br />
 >   author={Mart\'{i}nez Ram\'{i}rez, Marco A and Benetos, Emmanouil and Reiss, Joshua D},<br />
 >   booktitle={IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)},<br />
 >   month = {May},<br />
